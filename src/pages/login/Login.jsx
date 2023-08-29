@@ -2,11 +2,7 @@ import React, { useState, useEffect } from "react";
 import { $api } from "../../http/index";
 import "../../App.scss";
 import { useNavigate } from "react-router-dom";
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
-=======
->>>>>>> 42560b2e62814d6402e930c6ce2b00ac7f40f6ff
-
 export const Login = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
