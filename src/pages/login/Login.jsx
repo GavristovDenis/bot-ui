@@ -35,25 +35,20 @@ export const Login = () => {
     <div className="auth_wrapper">
       <div className="auth_container">
         <form className="input_container">
-          <TextField
-            className="input_color"
-            label="Email"
-            style={{ marginTop: "8px", color: "var(--tg-theme-button-color)" }}
-            variant="outlined"
+          <input
+            className="auth_input"
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
           />
-          <TextField
-            className="input_color"
+          <input
+            className="auth_color"
             label="Пароль"
-            style={{ marginTop: "8px", color: "var(--tg-theme-button-color)" }}
-            variant="outlined"
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Пароль"
             type={isShowPassword}
           />
         </form>
-        <div style={{ marginTop: "16px" }}>
+        <div>
           <span>Показать пароль </span>
           <input
             type="checkbox"

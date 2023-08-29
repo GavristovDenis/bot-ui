@@ -7,6 +7,12 @@ import { Link } from "react-router-dom";
 import { TextField } from "@mui/material";
 
 export const Revenue = () => {
+  const styles = (theme) => ({
+    notchedOutline: {
+      borderWidth: "1px",
+      borderColor: "yellow !important",
+    },
+  });
   const [showNavbar, setShowNavbar] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const transition = useTransition(showNavbar, {
@@ -35,15 +41,7 @@ export const Revenue = () => {
                 </animated.div>
               </animated.div>
               <animated.span style={style}>Введите сумму вывода:</animated.span>
-              <TextField
-                label="Сумма выплат"
-                style={{
-                  marginBottom: "16px",
-                  color: "var(--tg-theme-button-color)",
-                }}
-                variant="outlined"
-                className="modal_input"
-              />
+              <input className="modal_input" placeholder="Введите сумму" />
               <span style={style}>Доступно к выводу: 321</span>
               <button className="modal_button_active" style={style}>
                 Запросить выплату
