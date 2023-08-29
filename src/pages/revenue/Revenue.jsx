@@ -53,7 +53,17 @@ export const Revenue = () => {
       )}
       <div className="checkouts_nav_container">
         <div className="drop_down">
-          <span style={{ marginTop: "1%" }}>Доходность</span>
+          <div className="rev_drop_down_title">
+            <span
+              style={{
+                marginTop: "1%",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              Доходность
+            </span>
+          </div>
           <div
             className="drop_down_button"
             onClick={() => setShowNavbar((prev) => !prev)}
@@ -71,7 +81,7 @@ export const Revenue = () => {
               <Link
                 to={"/checkouts"}
                 style={{
-                  width: "100%",
+                  width: "79%",
                   display: "flex",
                   justifyContent: "center",
                   textDecoration: "none",
@@ -98,15 +108,57 @@ export const Revenue = () => {
                 <td>Площадка 1</td>
                 <td>Площадка 2</td>
                 <td>Площадка 3</td>
+                <td>Площадка 3</td>
+                <td>Площадка 3</td>
+                <td>Площадка 3</td>
+                <td>Площадка 3</td>
+                <td>Площадка 3</td>
+                <td>Площадка 3</td>
               </tr>
               <tr>
                 <td>Продукт 2</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
               </tr>
               <tr>
                 <td>Продукт 3</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+              </tr>
+              <tr>
+                <td>Продукт 3</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+              </tr>
+              <tr>
+                <td>Продукт 3</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
@@ -182,12 +234,14 @@ export const Revenue = () => {
           </table>
         </div>
       </div>
-      <button
-        className="check_out_button"
-        onClick={() => setShowModal((prev) => !prev)}
-      >
-        Вывести в рублях
-      </button>
+      <div className="check_out_button_container">
+        <button
+          className="check_out_button"
+          onClick={() => setShowModal((prev) => !prev)}
+        >
+          Вывести в рублях
+        </button>
+      </div>
     </div>
   );
 };
