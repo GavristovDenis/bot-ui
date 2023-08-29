@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+// import { useEffect } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useTransition } from "@react-spring/web";
 import { animated } from "@react-spring/web";
 import { Link } from "react-router-dom";
-import { $api } from "../../http/index";
+// import { $api } from "../../http/index";
 
 export const Home = () => {
   // const getUser = async () => {
