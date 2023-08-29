@@ -128,7 +128,9 @@ body {
   justify-content: center;
   background-color: var(--tg-theme-secondary-bg-color);
   span {
-    flex: 0 0 45%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
   }
 }
 .drop_down_title {
