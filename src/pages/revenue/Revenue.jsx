@@ -4,15 +4,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useTransition } from "@react-spring/web";
 import { animated } from "@react-spring/web";
 import { Link } from "react-router-dom";
-import { TextField } from "@mui/material";
 
 export const Revenue = () => {
-  const styles = (theme) => ({
-    notchedOutline: {
-      borderWidth: "1px",
-      borderColor: "yellow !important",
-    },
-  });
   const [showNavbar, setShowNavbar] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const transition = useTransition(showNavbar, {
