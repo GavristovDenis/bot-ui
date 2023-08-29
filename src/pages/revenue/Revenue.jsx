@@ -51,8 +51,8 @@ export const Revenue = () => {
           ""
         )
       )}
-      <div className="checkouts_nav_container">
-        <div className="drop_down">
+      <div className="rev_nav_container">
+        <div className="rev_drop_down">
           <div className="rev_drop_down_title">
             <span
               style={{
@@ -86,6 +86,8 @@ export const Revenue = () => {
                   justifyContent: "center",
                   textDecoration: "none",
                   color: "var(--tg-theme-button-text-color)",
+                  position: "sticky",
+                  left: "0",
                 }}
               >
                 <animated.button style={style}>
@@ -100,7 +102,9 @@ export const Revenue = () => {
       </div>
       <div className="revenue_container">
         <div style={{ width: "100%", height: "100%" }}>
-          <div className="table_title">За текущий период</div>
+          <div className="table_title">
+            <span>За текущий период</span>
+          </div>
           <table border="2" className="table">
             <tbody>
               <tr>
@@ -167,13 +171,21 @@ export const Revenue = () => {
           </table>
         </div>
         <div style={{ width: "100%", height: "100%" }}>
-          <div className="table_title">За весь период</div>
+          <div className="table_title">
+            <span>За весь период</span>
+          </div>
           <table border="2" className="table">
             <tbody>
               <tr>
                 <td></td>
                 <td>Площадка 1</td>
                 <td>Площадка 2</td>
+                <td>Площадка 3</td>
+                <td>Площадка 3</td>
+                <td>Площадка 3</td>
+                <td>Площадка 3</td>
+                <td>Площадка 3</td>
+                <td>Площадка 3</td>
                 <td>Площадка 3</td>
               </tr>
               <tr>
@@ -188,44 +200,93 @@ export const Revenue = () => {
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
               </tr>
+
               <tr>
-                <td>Продукт 4</td>
+                <td>Продукт 3</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
               </tr>
+
               <tr>
-                <td>Продукт 4</td>
+                <td>Продукт 3</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
               </tr>
+
               <tr>
-                <td>Продукт 5</td>
+                <td>Продукт 3</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
               </tr>
+
               <tr>
-                <td>Продукт 6</td>
+                <td>Продукт 3</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
               </tr>
+
               <tr>
-                <td>Продукт 7</td>
+                <td>Продукт 3</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
               </tr>
+
               <tr>
-                <td>Продукт 8</td>
+                <td>Продукт 3</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
               </tr>
+
               <tr>
-                <td>Продукт 9</td>
+                <td>Продукт 3</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
+                <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
                 <td>1800 ₽</td>
