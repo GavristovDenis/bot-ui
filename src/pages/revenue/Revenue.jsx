@@ -81,7 +81,7 @@ export const Revenue = () => {
               <Link
                 to={"/checkouts"}
                 style={{
-                  width: "79%",
+                  width: "20%",
                   display: "flex",
                   justifyContent: "center",
                   textDecoration: "none",
