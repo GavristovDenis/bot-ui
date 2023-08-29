@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
 import { $api } from "../../http/index";
 
 export const Home = () => {
-  const getUser = async () => {
-    try {
-      await $api.get("/api/user");
-    } catch (e) {
-      console.log(e.response.data.message);
-    }
-  };
-  useEffect(() => {
-    getUser();
-  });
+  // const getUser = async () => {
+  //   try {
+  //     await $api.get("/api/user");
+  //   } catch (e) {
+  //     console.log(e.response.data.message);
+  //   }
+  // };
+  // useEffect(() => {
+  //   getUser();
+  // });
   const [showNavbar, setShowNavbar] = useState(false);
   const transition = useTransition(showNavbar, {
     from: { x: -100, y: 100, opacity: 0 },

@@ -51,7 +51,7 @@ export const Revenue = () => {
           ""
         )
       )}
-      <div className="rev_nav_container">
+      <div className="checkouts_nav_container">
         <div className="drop_down">
           <span style={{ marginTop: "1%" }}>Доходность</span>
           <div
