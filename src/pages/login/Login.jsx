@@ -38,7 +38,7 @@ export const Login = () => {
           <TextField
             className="input_color"
             label="Email"
-            style={{ marginTop: "8px" }}
+            style={{ marginTop: "8px", color: "var(--tg-theme-button-color)" }}
             variant="outlined"
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
@@ -46,7 +46,7 @@ export const Login = () => {
           <TextField
             className="input_color"
             label="Пароль"
-            style={{ marginTop: "8px" }}
+            style={{ marginTop: "8px", color: "var(--tg-theme-button-color)" }}
             variant="outlined"
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Пароль"

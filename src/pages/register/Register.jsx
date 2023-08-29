@@ -48,7 +48,7 @@ export const Register = () => {
           <TextField
             className="input_color"
             label="Email"
-            style={{ marginTop: "8px" }}
+            style={{ marginTop: "8px", color: "var(--tg-theme-button-color)" }}
             variant="outlined"
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
@@ -58,14 +58,14 @@ export const Register = () => {
           <TextField
             className="input_color"
             label="Имя"
-            style={{ marginTop: "8px" }}
+            style={{ marginTop: "8px", color: "var(--tg-theme-button-color)" }}
             variant="outlined"
             onChange={(e) => setFirstName(e.target.value)}
             placeholder="Имя"
           />
           <TextField
             className="input_color"
-            style={{ marginTop: "8px" }}
+            style={{ marginTop: "8px", color: "var(--tg-theme-button-color)" }}
             label="Фамилия"
             variant="outlined"
             onChange={(e) => setLastName(e.target.value)}
@@ -74,14 +74,14 @@ export const Register = () => {
           <TextField
             className="input_color"
             label="Отчество"
-            style={{ marginTop: "8px" }}
+            style={{ marginTop: "8px", color: "var(--tg-theme-button-color)" }}
             variant="outlined"
             onChange={(e) => setMiddleName(e.target.value)}
             placeholder="Отчество"
           />
           <TextField
             label="Пароль"
-            style={{ marginTop: "8px" }}
+            style={{ marginTop: "8px", color: "var(--tg-theme-button-color)" }}
             variant="outlined"
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Пароль"

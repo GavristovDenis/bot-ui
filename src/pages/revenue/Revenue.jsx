@@ -37,7 +37,10 @@ export const Revenue = () => {
               <animated.span style={style}>Введите сумму вывода:</animated.span>
               <TextField
                 label="Сумма выплат"
-                style={{ marginBottom: "16px" }}
+                style={{
+                  marginBottom: "16px",
+                  color: "var(--tg-theme-button-color)",
+                }}
                 variant="outlined"
                 className="modal_input"
               />
