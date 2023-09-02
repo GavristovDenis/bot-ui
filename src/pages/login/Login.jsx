@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { $api } from "../../http/index";
 import "../../App.scss";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+import LoginInputs from "./components/LoginInputs";
+import LoginButtons from "./components/LoginButtons";
 export const Login = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -33,35 +34,15 @@ export const Login = () => {
   return (
     <div className="auth_wrapper">
       <div className="auth_container">
-        <form className="input_container">
-          <input
-            className="auth_input"
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email"
-          />
-          <input
-            className="auth_color"
-            label="Пароль"
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Пароль"
-            type={isShowPassword}
-          />
-        </form>
-        <div>
-          <span>Показать пароль </span>
-          <input
-            type="checkbox"
-            onChange={() => setShowPassword((prev) => !prev)}
-          />
-        </div>
-        <button onClick={loginRequest} className="login_button">
-          Войти
-        </button>
-        <div>
-          <Link to="/register">Регистрация</Link>
-        </div>
-        <div>{error}</div>
+        <LoginInputs
+          setEmail={setEmail}
+          setPassword={setPassword}
+          isShowPassword={isShowPassword}
+          setShowPassword={setShowPassword}
+        />
       </div>
+      <LoginButtons loginRequest={loginRequest} />
+      <div>{error}</div>
     </div>
   );
 };

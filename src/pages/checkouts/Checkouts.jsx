@@ -1,16 +1,9 @@
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { useTransition } from "@react-spring/web";
-import { animated } from "@react-spring/web";
 import { Link } from "react-router-dom";
 export const Checkouts = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-  const transition = useTransition(showNavbar, {
-    from: { x: -100, y: 100, opacity: 0 },
-    enter: { x: 0, y: 0, opacity: 1 },
-    leave: { x: 100, y: 100, opacity: 0 },
-  });
 
   return (
     <div className="checkouts_wrapper">
@@ -44,24 +37,21 @@ export const Checkouts = () => {
             )}
           </div>
         </div>
-        {transition((style, item) =>
-          item ? (
-            <animated.div style={style} className="checkouts_buttons">
-              <Link
-                to={"/revenue"}
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "center",
-                  textDecoration: "none",
-                  color: "var(--tg-theme-button-text-color)",
-                }}
-              >
-                <animated.button style={style}>Доходность</animated.button>
-              </Link>
-            </animated.div>
-          ) : undefined
-        )}
+
+        <div className="checkouts_buttons">
+          <Link
+            to={"/revenue"}
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              textDecoration: "none",
+              color: "var(--tg-theme-button-text-color)",
+            }}
+          >
+            <button>Доходность</button>
+          </Link>
+        </div>
       </div>
       <div className="revenue_container">
         <div style={{ width: "100%", height: "50%" }}>
