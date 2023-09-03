@@ -49,11 +49,11 @@ export const Register = () => {
           setShowPassword={() => setShowPassword((prev) => !prev)}
         />
 
-        <button onClick={registerRequest} className="login_button">
-          Регистрация
-        </button>
         <div>{error}</div>
       </div>
+      <button onClick={registerRequest} className="login_button">
+        Регистрация
+      </button>
     </div>
   );
 };

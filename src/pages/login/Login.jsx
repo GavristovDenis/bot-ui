@@ -41,8 +41,11 @@ export const Login = () => {
           setShowPassword={() => setShowPassword((prev) => !prev)}
         />
       </div>
-      <LoginButtons loginRequest={loginRequest} />
+      <LoginButtons />
       <div>{error}</div>
+      <button onClick={loginRequest} className="login_button">
+        Войти
+      </button>
     </div>
   );
 };

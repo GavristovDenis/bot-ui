@@ -8,9 +8,6 @@ function LoginButtons({ loginRequest }) {
             <div>
                 <Link to="/register">Регистрация</Link>
             </div>
-            <button onClick={loginRequest} className="login_button">
-                Войти
-            </button>
         </div>
     )
 }
