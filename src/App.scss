@@ -198,9 +198,9 @@ body {
   justify-content: center;
   background-color: var(--tg-theme-secondary-bg-color);
   span {
-    margin-top: 4%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 }
 .drop_down_title {
@@ -240,7 +240,7 @@ body {
 }
 
 .revenue_wrapper {
-  width: 2000px;
+  width: 100%;
   display: flex;
   place-items: center;
   flex-direction: column;
@@ -255,10 +255,10 @@ body {
   width: 100%;
 }
 .rev_drop_down {
-  width: 19.5%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: sticky;
   left: 0;
   background-color: var(--tg-theme-secondary-bg-color);
@@ -290,8 +290,14 @@ body {
     cursor: pointer;
   }
 }
-.table {
+.table_wrap {
+  max-width: 1500px;
   width: 100%;
+  overflow: auto;
+}
+
+.table {
+  width: 2500px;
   border: var(--tg-theme-bg-color);
   border-collapse: collapse;
   border-spacing: 0;
@@ -324,7 +330,7 @@ body {
   border-radius: var(--auth-border-size, 2px);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
-  width: 21%;
+  width: 100%;
   position: sticky;
   left: 0;
   height: 65px;
@@ -514,8 +520,9 @@ body {
 
 .logo {
   display: flex;
+  width: 5%;
   align-items: center;
-  margin-left: 5%;
+  justify-content: center;
 }
 .input_with_button {
   position: relative;

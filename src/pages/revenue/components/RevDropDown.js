@@ -33,7 +33,7 @@ function RevDropDown({ setShowNavbar, showNavbar }) {
                 <Link
                     to={"/checkouts"}
                     style={{
-                        width: "20%",
+                        width: "100%",
                         display: "flex",
                         justifyContent: "center",
                         textDecoration: "none",

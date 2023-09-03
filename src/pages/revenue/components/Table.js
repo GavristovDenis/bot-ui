@@ -2,7 +2,7 @@ import React from 'react'
 
 function Table({ tableName }) {
     return (
-        <div style={{ width: "100%", height: "100%" }}>
+        <div className='table_wrap'>
             <div className="table_title">
                 <span>{tableName}</span>
             </div>
@@ -12,6 +12,10 @@ function Table({ tableName }) {
                         <td></td>
                         <td>Площадка 1</td>
                         <td>Площадка 2</td>
+                        <td>Площадка 3</td>
+                        <td>Площадка 3</td>
+                        <td>Площадка 3</td>
+                        <td>Площадка 3</td>
                         <td>Площадка 3</td>
                         <td>Площадка 3</td>
                         <td>Площадка 3</td>
@@ -31,6 +35,11 @@ function Table({ tableName }) {
                         <td>1800 ₽</td>
                         <td>1800 ₽</td>
                         <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+
                     </tr>
                     <tr>
                         <td>Продукт 3</td>
@@ -43,14 +52,6 @@ function Table({ tableName }) {
                         <td>1800 ₽</td>
                         <td>1800 ₽</td>
                         <td>1800 ₽</td>
-                    </tr>
-                    <tr>
-                        <td>Продукт 3</td>
-                        <td>1800 ₽</td>
-                        <td>1800 ₽</td>
-                        <td>1800 ₽</td>
-                        <td>1800 ₽</td>
-                        <td>1800 ₽</td>
                         <td>1800 ₽</td>
                         <td>1800 ₽</td>
                         <td>1800 ₽</td>
@@ -67,6 +68,27 @@ function Table({ tableName }) {
                         <td>1800 ₽</td>
                         <td>1800 ₽</td>
                         <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>Продукт 3</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1800 ₽</td>
+
                     </tr>
                 </tbody>
             </table>
