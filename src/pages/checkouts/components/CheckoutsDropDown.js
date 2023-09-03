@@ -11,7 +11,7 @@ function CheckoutsDropDown({ setShowNavbar, showNavbar }) {
                 >
                     Лого
                 </div>
-                <div className="drop_down_title_container">
+                <div className="drop_down_title_wrapper">
                     <span
 
                     >
