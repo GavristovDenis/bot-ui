@@ -3,10 +3,11 @@ import React from 'react'
 function Table({ tableName }) {
     return (
         <div className='table_wrap'>
-            <div className="table_title">
-                <span>{tableName}</span>
-            </div>
+
             <table border="2" className="table">
+                <div className="table_title">
+                    <span>{tableName}</span>
+                </div>
                 <tbody>
                     <tr>
                         <td></td>
