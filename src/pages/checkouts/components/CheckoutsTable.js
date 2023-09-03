@@ -3,7 +3,7 @@ import React from 'react'
 function CheckoutsTable() {
     return (
         <div className="revenue_container">
-            <div style={{ width: "100%", height: "50%" }}>
+            <div className="table_wrap">
                 <table border="2" className="checkouts_table">
                     <tbody>
                         <tr>
