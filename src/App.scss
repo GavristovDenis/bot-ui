@@ -88,7 +88,7 @@ body {
 .login_input_container {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
   height: 100%;
   align-content: space-around;
   flex-wrap: wrap;
@@ -124,8 +124,8 @@ body {
 .reg_input_container {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  height: 65%;
+  width: 100%;
+  height: 70%;
   align-content: space-around;
   flex-wrap: wrap;
 
