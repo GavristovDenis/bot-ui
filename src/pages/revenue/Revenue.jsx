@@ -12,7 +12,7 @@ export const Revenue = () => {
       <RevDropDown showNavbar={showNavbar} setShowNavbar={setShowNavbar} />
       <div className="revenue_container">
         <div className="available_funds">Доступно к выводу:</div>
-        <Table tableName={"За текущий период"} />
+        <Table tableName={"За прошедший месяц"} />
         <Table tableName={"За всё время"} />
       </div>
       <div className="check_out_button_container">
