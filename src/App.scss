@@ -387,15 +387,15 @@ body {
   margin: 10px 0;
 }
 
-.modal_button_inactive {
+.modal_button_active {
   border: 1px solid var(--auth-border-color, transparent);
   border-radius: var(--auth-border-size, 2px);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   width: 60%;
-  height: 10%;
-  background-color: rgba(128, 128, 128, 0.63);
-  color: rgb(247, 247, 247);
+  height: 30%;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
   outline: none;
   overflow: hidden;
   position: block;
