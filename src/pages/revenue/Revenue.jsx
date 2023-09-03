@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Modal from "./components/Modal";
 import RevDropDown from "./components/RevDropDown";
-import CurrentTable from "./components/CurrentTable";
-import AllTimeTable from "./components/AllTimeTable";
+import Table from "./components/Table";
 export const Revenue = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -12,8 +11,8 @@ export const Revenue = () => {
       {showModal ? <Modal setShowModal={setShowModal} /> : ""}
       <RevDropDown showNavbar={showNavbar} setShowNavbar={setShowNavbar} />
       <div className="revenue_container">
-        <CurrentTable />
-        <AllTimeTable />
+        <Table tableName={"За текущий период"} />
+        <Table tableName={"За всё время"} />
       </div>
       <div className="check_out_button_container">
         <button

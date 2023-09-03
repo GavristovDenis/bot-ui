@@ -16,11 +16,7 @@ function CheckoutsTable() {
                             <td>1800 ₽</td>
                             <td>Обработан</td>
                         </tr>
-                        <tr>
-                            <td>27/9/2023</td>
-                            <td>1800 ₽</td>
-                            <td>В обработке</td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>

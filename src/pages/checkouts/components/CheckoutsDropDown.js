@@ -8,17 +8,12 @@ function CheckoutsDropDown({ setShowNavbar, showNavbar }) {
             <div className="drop_down">
                 <div
                     className="logo"
-                    style={{ display: "flex", alignItems: "center", marginLeft: "5%" }}
                 >
                     Лого
                 </div>
-                <div className="drop_down_title">
+                <div className="drop_down_title_container">
                     <span
-                        style={{
-                            marginTop: "1%",
-                            display: "flex",
-                            justifyContent: "center",
-                        }}
+
                     >
                         Запросы на выплату
                     </span>

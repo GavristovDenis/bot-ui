@@ -8,17 +8,12 @@ function RevDropDown({ setShowNavbar, showNavbar }) {
             <div className="rev_drop_down">
                 <div
                     className="logo"
-                    style={{ display: "flex", alignItems: "center" }}
                 >
                     Лого
                 </div>
                 <div className="rev_drop_down_title">
                     <span
-                        style={{
-                            marginTop: "1%",
-                            display: "flex",
-                            justifyContent: "center",
-                        }}
+
                     >
                         Доходность
                     </span>
