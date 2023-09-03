@@ -216,9 +216,9 @@ body {
   }
 }
 .drop_down_title_wrapper {
-  width: 30%;
+  width: 40%;
   height: 100%;
-  margin-right: 5%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,21 +297,20 @@ body {
   }
 }
 .table_wrap {
-  max-width: 1500px;
   width: 100%;
   overflow: auto;
+  margin-bottom: 5%;
 }
 
 .table {
   width: 2500px;
   border: var(--tg-theme-bg-color);
-  border-collapse: collapse;
   border-spacing: 0;
   table-layout: fixed;
 
   td {
     text-align: center;
-    width: 25%;
+    width: 50px;
     height: 50px;
   }
   tr:nth-child(1) {
@@ -397,24 +396,7 @@ body {
   border-radius: 4px;
   margin: 10px 0;
 }
-.modal_button_active {
-  border: 1px solid var(--auth-border-color, transparent);
-  border-radius: var(--auth-border-size, 2px);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-  width: 60%;
-  height: 10%;
-  background-color: var(--tg-theme-button-color);
-  color: var(--tg-theme-button-text-color);
-  outline: none;
-  overflow: hidden;
-  position: block;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  cursor: pointer;
-  transition: 0.5s;
-}
+
 .modal_button_inactive {
   border: 1px solid var(--auth-border-color, transparent);
   border-radius: var(--auth-border-size, 2px);
@@ -434,17 +416,7 @@ body {
   transition: 0.5s;
 }
 
-.modal_close {
-  display: flex;
-  justify-content: flex-end;
-  width: 80%;
-}
-
-.css-i4bv87-MuiSvgIcon-root {
-  cursor: pointer;
-}
 ::placeholder {
-  /* Most modern browsers support this now. */
   color: var(--tg-theme-text-color) !important;
 }
 .login_button {

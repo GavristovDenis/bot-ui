@@ -4,7 +4,7 @@ function CheckoutsTable() {
     return (
         <div className="revenue_container">
             <div className="table_wrap">
-                <table border="2" className="checkouts_table">
+                <table border="2" className="table">
                     <tbody>
                         <tr>
                             <td>Дата создания запроса</td>
