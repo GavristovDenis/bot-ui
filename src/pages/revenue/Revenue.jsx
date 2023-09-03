@@ -11,6 +11,7 @@ export const Revenue = () => {
       {showModal ? <Modal setShowModal={setShowModal} /> : ""}
       <RevDropDown showNavbar={showNavbar} setShowNavbar={setShowNavbar} />
       <div className="revenue_container">
+        <div className="available_funds">Доступно к выводу:</div>
         <Table tableName={"За текущий период"} />
         <Table tableName={"За всё время"} />
       </div>

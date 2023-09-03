@@ -393,7 +393,7 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   width: 60%;
-  height: 30%;
+  height: 10%;
   background-color: var(--tg-theme-button-color);
   color: var(--tg-theme-button-text-color);
   outline: none;
@@ -533,4 +533,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.available_funds {
+  width: 100%;
+  text-align: center;
+  background-color: var(--tg-theme-secondary-bg-color);
 }
