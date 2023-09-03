@@ -367,13 +367,14 @@ body {
     position: sticky;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     height: 60%;
+    padding: 2%;
     width: 75%;
     background-color: var(--tg-theme-secondary-bg-color);
     border-radius: 35px;
     margin-top: 15%;
+    align-items: flex-start;
   }
 }
 
@@ -402,8 +403,23 @@ body {
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
+}
+.modal_button_inactive {
+  border: 1px solid var(--auth-border-color, transparent);
+  border-radius: var(--auth-border-size, 2px);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  width: 60%;
+  height: 10%;
+  background-color: grey;
+  color: white;
+  outline: none;
+  overflow: hidden;
+  position: block;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
   cursor: default;
-  transition: 0.5s;
 }
 
 ::placeholder {
@@ -539,4 +555,5 @@ body {
   width: 100%;
   text-align: center;
   background-color: var(--tg-theme-secondary-bg-color);
+  margin-bottom: 5%;
 }
