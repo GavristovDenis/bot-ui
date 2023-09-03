@@ -1,5 +1,5 @@
 import React from 'react'
-
+import VisibilityIcon from '@mui/icons-material/Visibility';
 function RegInputs({ setEmail, setFirstName, setLastName, setMiddleName, setPassword, isShowPassword, setShowPassword }) {
     return (
         <div
@@ -38,20 +38,16 @@ function RegInputs({ setEmail, setFirstName, setLastName, setMiddleName, setPass
                 onChange={(e) => setMiddleName(e.target.value)}
                 placeholder="Отчество"
             />
-            <input
-                label="Пароль"
-                variant="outlined"
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Пароль"
-                type={isShowPassword}
-
-            />
-            <div>
-                <span>Показать пароль </span>
+            <div className='reg_input_with_button'>
                 <input
-                    type="checkbox"
-                    onChange={() => setShowPassword((prev) => !prev)}
+                    label="Пароль"
+                    variant="outlined"
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Пароль"
+                    type={isShowPassword}
+
                 />
+                <VisibilityIcon className='show_button' onClick={setShowPassword} />
             </div>
         </div>
     )

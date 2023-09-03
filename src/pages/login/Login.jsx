@@ -38,7 +38,7 @@ export const Login = () => {
           setEmail={setEmail}
           setPassword={setPassword}
           isShowPassword={isShowPassword}
-          setShowPassword={setShowPassword}
+          setShowPassword={() => setShowPassword((prev) => !prev)}
         />
       </div>
       <LoginButtons loginRequest={loginRequest} />

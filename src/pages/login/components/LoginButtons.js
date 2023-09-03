@@ -1,15 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 function LoginButtons({ loginRequest }) {
-    const tg = window.Telegram.WebApp
+
 
     return (
-        <div>      <button onClick={loginRequest} className="login_button">
-            Войти
-        </button>
+        <div className='login_buttons_container'>
             <div>
-                <Link to="/register">{tg.MainButton.text("Войти").color(tg.ThemeParams.bg_color).textColor(tg.ThemeParams.button_text_colorString).onClick(() => loginRequest())}</Link>
-            </div></div>
+                <Link to="/register">Регистрация</Link>
+            </div>
+            <button onClick={loginRequest} className="login_button">
+                Войти
+            </button>
+        </div>
     )
 }
 

@@ -38,7 +38,7 @@ export const Register = () => {
 
   return (
     <div className="auth_wrapper">
-      <div className="auth_container">
+      <div className="reg_container">
         <RegInputs
           setEmail={setEmail}
           setFirstName={setFirstName}
