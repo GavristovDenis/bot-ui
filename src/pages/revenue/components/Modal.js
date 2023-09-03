@@ -10,7 +10,8 @@ function Modal({ setShowModal }) {
                 </div>
                 <span>Введите сумму вывода:</span>
                 <input className="modal_input" placeholder="Введите сумму" />
-                <span>Доступно к выводу: 321</span>
+                <span>Сумма вывода не может превышать возможную сумму вывода</span>
+                <button className='modal_button_inactive'>Доступно к выводу: 321</button>
                 <button className="modal_button_active">Запросить выплату</button>
             </div>
         </div>
