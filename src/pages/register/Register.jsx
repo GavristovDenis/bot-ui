@@ -46,7 +46,7 @@ export const Register = () => {
           setMiddleName={setMiddleName}
           setPassword={setPassword}
           isShowPassword={isShowPassword}
-          setShowPassword={setShowPassword}
+          setShowPassword={() => setShowPassword((prev) => !prev)}
         />
 
         <button onClick={registerRequest} className="login_button">
