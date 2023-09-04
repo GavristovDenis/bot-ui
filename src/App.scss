@@ -7,7 +7,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+html {
+  overflow-y: hidden;
+}
 body {
   margin: 0;
   background-color: var(--tg-theme-bg-color);
@@ -216,6 +218,7 @@ body {
 .drop_down_button {
   cursor: pointer;
   height: 30%;
+  width: 50px;
 }
 
 .css-i4bv87-MuiSvgIcon-root {
@@ -563,7 +566,7 @@ body {
 }
 
 .manager_table_wrap {
-  width: 99%;
+  width: 100%;
   overflow: auto;
   margin-bottom: 5%;
   background-color: var(--tg-theme-secondary-bg-color);
