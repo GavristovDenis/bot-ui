@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ManagerDropDown from "./components/ManagerDropDown";
-// import ManagerTable from "./components/ManagerTable";
+import ManagerTable from "./components/ManagerTable";
 // import FilterButtons from "./components/FilterButtons";
 import dayjs from "dayjs";
 const Manager = () => {
@@ -73,6 +73,17 @@ const Manager = () => {
           showNavbar={showNavbar}
           setShowNavbar={() => setShowNavbar((prev) => !prev)}
         />
+        {/* <FilterButtons
+          setStatusDropDown={setStatusDropDown}
+          setMockData={setMockData}
+          statusFilter={statusFilter}
+          data={data}
+          dateSort={dateSort}
+          setSortDropDown={setSortDropDown}
+          sortDropDown={sortDropDown}
+          statusDropDown={statusDropDown}
+        /> */}
+        <ManagerTable mockData={mockData} setPageToShow={setPageToShow} />
       </div>
     );
   } else {
