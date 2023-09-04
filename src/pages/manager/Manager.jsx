@@ -88,22 +88,38 @@ const Manager = () => {
     );
   } else {
     return (
-      <div>
+      <div className="manager_single_page_container">
         <ManagerDropDown
           showNavbar={showNavbar}
           setShowNavbar={() => setShowNavbar((prev) => !prev)}
           setPageToShow={setPageToShow}
           pageToShow={pageToShow}
         />
-        <div>{mockData[pageToShow].name}</div>
-        <div>{dayjs(mockData[pageToShow].date).format("DD/MM/YYYY")}</div>
-        <div>{mockData[pageToShow].amount}</div>
-        <div>{mockData[pageToShow].status}</div>
-        {mockData[pageToShow].status === "В обработке" ? (
-          <button onClick={() => updateState()}>Обработать</button>
-        ) : (
-          ""
-        )}
+        <div className="manager_single_page">
+          <div className="manager_single_page_info">
+            <span> Пользователь</span> <span>{mockData[pageToShow].name}</span>
+          </div>
+          <div className="manager_single_page_info">
+            <span>Дата создания запроса</span>{" "}
+            <span>{dayjs(mockData[pageToShow].date).format("DD/MM/YYYY")}</span>
+          </div>
+          <div className="manager_single_page_info">
+            <span>Сумма</span> <span>{mockData[pageToShow].amount}</span>
+          </div>
+          <div className="manager_single_page_info">
+            <span>Статус</span> <span>{mockData[pageToShow].status}</span>
+          </div>
+          {mockData[pageToShow].status === "В обработке" ? (
+            <button
+              className="manager_single_page_button"
+              onClick={() => updateState()}
+            >
+              Обработать
+            </button>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     );
   }
