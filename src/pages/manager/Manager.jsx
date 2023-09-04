@@ -32,7 +32,7 @@ const Manager = () => {
   const [pageToShow, setPageToShow] = useState(null);
 
   const statusFilter = (status) => {
-    const filteredArray = mockData.filter((item) => item.status === status);
+    const filteredArray = data.filter((item) => item.status === status);
     setMockData(filteredArray);
   };
 
