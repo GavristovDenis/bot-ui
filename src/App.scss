@@ -698,7 +698,9 @@ body {
 .manager_single_page_info {
   display: flex;
   width: 100%;
-  background: aliceblue;
+  background: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+
   justify-content: space-around;
   height: 50px;
   align-items: center;
