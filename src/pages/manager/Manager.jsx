@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ManagerDropDown from "./components/ManagerDropDown";
-import ManagerTable from "./components/ManagerTable";
-import FilterButtons from "./components/FilterButtons";
+// import ManagerTable from "./components/ManagerTable";
+// import FilterButtons from "./components/FilterButtons";
 import dayjs from "dayjs";
 const Manager = () => {
   const data = [
@@ -27,30 +27,30 @@ const Manager = () => {
 
   const [mockData, setMockData] = useState(data);
   const [showNavbar, setShowNavbar] = useState(false);
-  const [statusDropDown, setStatusDropDown] = useState(false);
-  const [sortDropDown, setSortDropDown] = useState(false);
+  // const [statusDropDown, setStatusDropDown] = useState(false);
+  // const [sortDropDown, setSortDropDown] = useState(false);
   const [pageToShow, setPageToShow] = useState(null);
 
-  const statusFilter = (status) => {
-    const filteredArray = data.filter((item) => item.status === status);
-    setMockData(filteredArray);
-  };
+  // const statusFilter = (status) => {
+  //   const filteredArray = data.filter((item) => item.status === status);
+  //   setMockData(filteredArray);
+  // };
 
-  const dateSort = () => {
-    const sortedData = [...mockData].sort((a, b) => {
-      const dateA = new Date(a.date).getTime();
-      const dateB = new Date(b.date).getTime();
+  // const dateSort = () => {
+  //   const sortedData = [...mockData].sort((a, b) => {
+  //     const dateA = new Date(a.date).getTime();
+  //     const dateB = new Date(b.date).getTime();
 
-      if (dateA < dateB) {
-        return -1;
-      }
-      if (dateA > dateB) {
-        return 1;
-      }
-      return 0;
-    });
-    setMockData(sortedData);
-  };
+  //     if (dateA < dateB) {
+  //       return -1;
+  //     }
+  //     if (dateA > dateB) {
+  //       return 1;
+  //     }
+  //     return 0;
+  //   });
+  //   setMockData(sortedData);
+  // };
 
   const updateState = () => {
     const newState = data.map((obj) => {
@@ -67,23 +67,12 @@ const Manager = () => {
     return (
       <div
         className="manager_container"
-        onClick={() => setSortDropDown(false) & setStatusDropDown(false)}
+        // onClick={() => setSortDropDown(false) & setStatusDropDown(false)}
       >
         <ManagerDropDown
           showNavbar={showNavbar}
           setShowNavbar={() => setShowNavbar((prev) => !prev)}
         />
-        <FilterButtons
-          setStatusDropDown={setStatusDropDown}
-          setMockData={setMockData}
-          statusFilter={statusFilter}
-          data={data}
-          dateSort={dateSort}
-          setSortDropDown={setSortDropDown}
-          sortDropDown={sortDropDown}
-          statusDropDown={statusDropDown}
-        />
-        <ManagerTable mockData={mockData} setPageToShow={setPageToShow} />
       </div>
     );
   } else {
