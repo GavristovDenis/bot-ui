@@ -69,10 +69,6 @@ const Manager = () => {
         className="manager_container"
         onClick={() => setSortDropDown(false) & setStatusDropDown(false)}
       >
-        <ManagerDropDown
-          showNavbar={showNavbar}
-          setShowNavbar={() => setShowNavbar((prev) => !prev)}
-        />
         <FilterButtons
           setStatusDropDown={setStatusDropDown}
           setMockData={setMockData}
