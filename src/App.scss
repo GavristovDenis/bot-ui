@@ -611,7 +611,7 @@ body {
 }
 
 .filter_buttons_container {
-  width: 99%;
+  width: 100%;
   background: var(--tg-theme-bg-color);
   position: absolute;
   height: 70px;
@@ -658,7 +658,7 @@ body {
   justify-content: space-around;
   background: var(--tg-theme-bg-color);
   align-items: center;
-  padding: 7% 0%;
+  padding: 1% 0%;
   button {
     width: 75%;
   }
