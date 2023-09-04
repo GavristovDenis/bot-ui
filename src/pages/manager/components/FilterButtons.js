@@ -13,7 +13,7 @@ function FilterButtons({ setStatusDropDown, setMockData, statusFilter, data, dat
                         <button onClick={() => statusFilter("В обработке") & setStatusDropDown(prev => !prev)}>
                             В обработке
                         </button>
-                        <button style={{ color: "green" }} onClick={() => statusFilter("Обработан") & setStatusDropDown(prev => !prev)}>
+                        <button style={{ color: "#2ee72e" }} onClick={() => statusFilter("Обработан") & setStatusDropDown(prev => !prev)}>
                             {" "}
                             Обработан
                         </button>
