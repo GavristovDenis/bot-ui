@@ -566,6 +566,7 @@ body {
 }
 
 .manager_table_wrap {
+  width: 1000px;
   width: 100%;
   overflow: auto;
   margin-bottom: 5%;
@@ -573,7 +574,7 @@ body {
 }
 
 .manager_table {
-  width: 1590px;
+  width: 750px;
   border: var(--tg-theme-bg-color);
   border-spacing: 0;
   table-layout: fixed;
