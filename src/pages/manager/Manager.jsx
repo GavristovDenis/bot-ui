@@ -69,17 +69,10 @@ const Manager = () => {
         className="manager_container"
         onClick={() => setSortDropDown(false) & setStatusDropDown(false)}
       >
-        <FilterButtons
-          setStatusDropDown={setStatusDropDown}
-          setMockData={setMockData}
-          statusFilter={statusFilter}
-          data={data}
-          dateSort={dateSort}
-          setSortDropDown={setSortDropDown}
-          sortDropDown={sortDropDown}
-          statusDropDown={statusDropDown}
+        <ManagerDropDown
+          showNavbar={showNavbar}
+          setShowNavbar={() => setShowNavbar((prev) => !prev)}
         />
-        <ManagerTable mockData={mockData} setPageToShow={setPageToShow} />
       </div>
     );
   } else {
