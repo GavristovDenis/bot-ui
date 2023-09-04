@@ -615,6 +615,7 @@ body {
   justify-content: center;
   width: 100%;
   background: red;
+  position: absolute;
   height: 70px;
   max-height: 100%;
   padding: 0;
@@ -653,7 +654,7 @@ body {
 }
 .hidden_buttons {
   display: flex;
-  width: 200px;
+  width: 100px;
   height: 150px;
   flex-direction: column;
   justify-content: space-around;
@@ -667,7 +668,7 @@ body {
 .selector_button_container {
   display: flex;
   height: 70px;
-  width: 200px;
+  width: 100px;
   align-items: center;
   justify-content: center;
 }
