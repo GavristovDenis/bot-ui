@@ -639,6 +639,13 @@ body {
     height: 40px;
     padding: 0;
     font-size: 13px;
+    transition: 0.5s;
+  }
+  button:hover {
+    width: 85%;
+    height: 45px;
+    transition: 0.5s;
+    color: var(--tg-theme-button-color);
   }
 }
 
