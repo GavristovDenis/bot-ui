@@ -10,7 +10,7 @@ function ManagerDropDown({ showNavbar, setShowNavbar, pageToShow, setPageToShow 
                     className="logo"
                 >
                     Лого
-                </div> : <ArrowBackIosIcon className='back_icon' onClick={() => setPageToShow(null)} />}
+                </div> : <div className='back_icon_container'><ArrowBackIosIcon className='back_icon' onClick={() => setPageToShow(null)} /></div>}
 
             <div
                 className="drop_down_button"

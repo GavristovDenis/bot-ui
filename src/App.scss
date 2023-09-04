@@ -721,3 +721,11 @@ body {
   width: 100%;
   transition: 0.5s;
 }
+
+.back_icon_container {
+  height: 85%;
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
