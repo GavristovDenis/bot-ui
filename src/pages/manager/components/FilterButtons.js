@@ -13,7 +13,7 @@ function FilterButtons({ setStatusDropDown, setMockData, statusFilter, data, dat
                         <button onClick={() => statusFilter("В обработке") & setStatusDropDown(prev => !prev)}>
                             В обработке
                         </button>
-                        <button onClick={() => statusFilter("Обработан") & setStatusDropDown(prev => !prev)}>
+                        <button style={{ color: "green" }} onClick={() => statusFilter("Обработан") & setStatusDropDown(prev => !prev)}>
                             {" "}
                             Обработан
                         </button>
@@ -22,7 +22,7 @@ function FilterButtons({ setStatusDropDown, setMockData, statusFilter, data, dat
                 </div>
 
                 <div className='button_selector'>
-                    <div className='selector_button_container'> <button onClick={() => setSortDropDown(sortDropDown ? false : true)}>Сортировать по</button></div>
+                    <div className='selector_button_container'> <button onClick={(e) => setSortDropDown(sortDropDown ? false : true) & e.stopPropagation()}>Сортировать по</button></div>
                     {sortDropDown ? <div className='hidden_buttons'>
                         <button onClick={() => dateSort() & setSortDropDown(prev => !prev)}>Дате</button>
                         <button onClick={() => setMockData(data) & setSortDropDown(prev => !prev)}>-</button>

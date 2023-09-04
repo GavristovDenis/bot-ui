@@ -610,7 +610,7 @@ body {
   width: 100%;
   background: var(--tg-theme-bg-color);
   position: absolute;
-  height: 50px;
+  height: 70px;
   max-height: 100%;
   button {
     border: 3px solid var(--auth-border-color, transparent);
@@ -654,11 +654,14 @@ body {
   justify-content: space-around;
   background: var(--tg-theme-bg-color);
   align-items: center;
+  button {
+    width: 75%;
+  }
 }
 
 .selector_button_container {
   display: flex;
-  height: 50px;
+  height: 70px;
   width: 200px;
   align-items: center;
   justify-content: center;
