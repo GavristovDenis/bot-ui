@@ -1,6 +1,5 @@
 import React from 'react'
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
+
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 function ManagerDropDown({ showNavbar, setShowNavbar, pageToShow, setPageToShow }) {
     return (
@@ -12,16 +11,7 @@ function ManagerDropDown({ showNavbar, setShowNavbar, pageToShow, setPageToShow 
                     Лого
                 </div> : <ArrowBackIosIcon className='back_icon' onClick={() => setPageToShow(null)} />}
 
-            <div
-                className="drop_down_button"
-                onClick={setShowNavbar}
-            >
-                {showNavbar ? (
-                    <CloseIcon fontSize="large" />
-                ) : (
-                    <MenuIcon fontSize="large" />
-                )}
-            </div>
+
         </div>
     )
 }
