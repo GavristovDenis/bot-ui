@@ -22,9 +22,9 @@ function FilterButtons({ setStatusDropDown, setMockData, statusFilter, data, dat
                 </div>
 
                 <div className='button_selector'>
-                    <div className='selector_button_container'> <button onClick={() => setSortDropDown(sortDropDown ? false : true)}>Сортировать по:</button></div>
+                    <div className='selector_button_container'> <button onClick={() => setSortDropDown(sortDropDown ? false : true)}>Сортировать по</button></div>
                     {sortDropDown ? <div className='hidden_buttons'>
-                        <button onClick={() => dateSort()}>дате</button>
+                        <button onClick={() => dateSort()}>Дате</button>
                         <button onClick={() => setMockData(data)}>-</button>
                     </div> : " "}
 

@@ -188,6 +188,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: var(--tg-theme-secondary-bg-color);
+  align-items: center;
 }
 .rev_drop_down_title {
   width: 30%;
@@ -569,7 +570,7 @@ body {
 }
 
 .manager_table {
-  width: 1800px;
+  width: 1625px;
   border: var(--tg-theme-bg-color);
   border-spacing: 0;
   table-layout: fixed;
@@ -578,7 +579,7 @@ body {
   td {
     text-align: center;
     width: 50px;
-    height: 100px;
+    height: 75px;
   }
   tr {
     cursor: pointer;
@@ -628,7 +629,7 @@ body {
     width: 80%;
     height: 40px;
     padding: 0;
-    font-size: 20px;
+    font-size: 13px;
   }
 }
 
@@ -647,7 +648,7 @@ body {
 }
 .hidden_buttons {
   display: flex;
-  width: 300px;
+  width: 200px;
   height: 300px;
   flex-direction: column;
   justify-content: space-around;
@@ -658,7 +659,7 @@ body {
 .selector_button_container {
   display: flex;
   height: 50px;
-  width: 300px;
+  width: 200px;
   align-items: center;
   justify-content: center;
 }
