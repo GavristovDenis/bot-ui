@@ -6,6 +6,7 @@ import "./App.scss";
 import { Register } from "./pages/register/Register";
 import { Revenue } from "./pages/revenue/Revenue";
 import { Checkouts } from "./pages/checkouts/Checkouts";
+import Manager from "./pages/manager/Manager";
 
 const App = () => {
   //let tg = window.Telegram.WebApp;
@@ -16,6 +17,7 @@ const App = () => {
       <Link to="/register">register</Link>
       <Link to="/revenue">revenue</Link>
       <Link to="/checkouts">checkouts</Link>
+      <Link to="/manager">manager</Link>
       {
         //tg.initDataUnsafe.user.id
       }
@@ -25,6 +27,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/revenue" element={<Revenue />} />
         <Route path="/checkouts" element={<Checkouts />} />
+        <Route path="/manager" element={<Manager />} />
       </Routes>
     </>
   );
