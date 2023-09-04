@@ -5,15 +5,15 @@ function FilterButtons({ setStatusDropDown, setMockData, statusFilter, data, dat
         <div className="filter_buttons_container">
             <div className="filter_buttons">
                 <div className='button_selector'>
-                    <div className='selector_button_container'>   <button onClick={() => setStatusDropDown(statusDropDown ? false : true)}>
+                    <div className='selector_button_container'>   <button onClick={(e) => setStatusDropDown(statusDropDown ? false : true) & e.stopPropagation()}>
                         Фильтровать по статусу
                     </button></div>
                     {statusDropDown ? <div className='hidden_buttons'>
-                        <button onClick={() => setMockData(data)}>-</button>
-                        <button onClick={() => statusFilter("В обработке")}>
+                        <button onClick={() => setMockData(data) & setStatusDropDown(prev => !prev)}>-</button>
+                        <button onClick={() => statusFilter("В обработке") & setStatusDropDown(prev => !prev)}>
                             В обработке
                         </button>
-                        <button onClick={() => statusFilter("Обработан")}>
+                        <button onClick={() => statusFilter("Обработан") & setStatusDropDown(prev => !prev)}>
                             {" "}
                             Обработан
                         </button>
@@ -24,8 +24,8 @@ function FilterButtons({ setStatusDropDown, setMockData, statusFilter, data, dat
                 <div className='button_selector'>
                     <div className='selector_button_container'> <button onClick={() => setSortDropDown(sortDropDown ? false : true)}>Сортировать по</button></div>
                     {sortDropDown ? <div className='hidden_buttons'>
-                        <button onClick={() => dateSort()}>Дате</button>
-                        <button onClick={() => setMockData(data)}>-</button>
+                        <button onClick={() => dateSort() & setSortDropDown(prev => !prev)}>Дате</button>
+                        <button onClick={() => setMockData(data) & setSortDropDown(prev => !prev)}>-</button>
                     </div> : " "}
 
                 </div>

@@ -65,7 +65,10 @@ const Manager = () => {
 
   if (pageToShow == null) {
     return (
-      <div className="manager_container">
+      <div
+        className="manager_container"
+        onClick={() => setSortDropDown(false) & setStatusDropDown(false)}
+      >
         <ManagerDropDown
           showNavbar={showNavbar}
           setShowNavbar={() => setShowNavbar((prev) => !prev)}
